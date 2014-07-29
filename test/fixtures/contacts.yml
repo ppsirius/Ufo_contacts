@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  city: 1
+  date: 2014-07-29
+  contact_num: 1
+
+two:
+  city: 1
+  date: 2014-07-29
+  contact_num: 1
