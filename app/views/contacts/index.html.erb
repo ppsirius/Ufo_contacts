@@ -13,7 +13,7 @@
   <tbody>
     <% @contacts.each do |contact| %>
       <tr>
-        <td><%= contact.city %></td>
+        <td><%= contact.city.name %></td>
         <td><%= contact.date %></td>
         <td><%= contact.contact_num %></td>
         <td><%= link_to 'Show', contact %></td>

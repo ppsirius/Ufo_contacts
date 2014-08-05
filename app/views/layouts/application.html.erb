@@ -7,8 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<h3><%= link_to 'Home', root_path %>&nbsp&nbsp&nbsp&nbsp&nbsp
+<%= link_to 'Add contact', new_contact_path %>&nbsp&nbsp&nbsp&nbsp&nbsp
+<%= link_to 'Add city', new_city_path %></h3>
 <%= yield %>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
 
 </body>
 </html>

@@ -1,4 +1,4 @@
 class Contact < ActiveRecord::Base
 	belongs_to :city
-	validates :contact, :numericality => { :greater_than => 0 }
+	validates :contact_num, :numericality => { :greater_than => 0 }
 end

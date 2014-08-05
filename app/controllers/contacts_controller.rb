@@ -1,6 +1,6 @@
 class ContactsController < ApplicationController
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
   # GET /contacts
   # GET /contacts.json
   def index
@@ -60,6 +60,7 @@ class ContactsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def contact_params
-      params.require(:contact).permit(:city, :date, :contact_num)
+      params.require(:contact).permit(:city_id, :date, :contact_num)
+      
     end
 end

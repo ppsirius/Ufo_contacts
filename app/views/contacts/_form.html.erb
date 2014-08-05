@@ -12,8 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :city %><br>
-    <%= f.number_field :city %>
+    <%= f.label :city_id %><br>
+    <%= f.select :city_id, City.all.map { |p| [p.name, p.id_city]} %>&nbsp&nbsp<%= link_to 'New Contact', new_city_path %>
   </div>
   <div class="field">
     <%= f.label :date %><br>
