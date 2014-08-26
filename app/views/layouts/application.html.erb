@@ -4,16 +4,38 @@
   <title>UFO CONTACTS</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 </head>
 <body>
 <div class="container">
-<h3><%= link_to 'Home', root_path %>&nbsp&nbsp&nbsp&nbsp&nbsp
-<%= link_to 'Add contact', new_contact_path %>&nbsp&nbsp&nbsp&nbsp&nbsp
-<%= link_to 'Add city', new_city_path %></h3>
-<%= yield %>
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
+
+
+
+<%= link_to root_path, :class => "btn-default btn-lg menu" do %>
+<i class="glyphicon glyphicon-home"></i>&nbsp&nbsp&nbspHome
+<% end %>
+
+<%= link_to new_contact_path, :class => "btn-default btn-lg menu" do %>
+<i class="glyphicon glyphicon-plus"></i>&nbsp&nbsp&nbspAdd contact
+<% end %>
+
+<%= link_to new_city_path, :class => "btn-default btn-lg menu" do %>
+<i class="glyphicon glyphicon-plus"></i>&nbsp&nbsp&nbspAdd new city
+<% end %>
+
+<br /><br />
+<%= yield %>
+
+
+<div class="alien"><svg width="600px" height="600px" opacity="0.1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<path d="M87,35H77v-8h-9v-9h-9v9H40v-9h-9v9h-9v8H12v10H2v18v10h10V63v-8h10v9h9v9h-9v11h8.603H40V73.289V64h19v9.289V84h9.397H77
+	V73h-9v-9h9v-9h10v18h9V45h-9V35z M41,50H31V40h10V50z M69,50H59V40h10V50z"/>
+</svg>
+</div>
 </div>
 </body>
 </html>

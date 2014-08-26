@@ -3,5 +3,22 @@ table {
 }
 
 body {
+	font-family: 'Lobster';
 	background: url('/assets/greyzz.png');
+}
+
+.alien {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+
+}
+
+.menu {
+	margin-right: 20px;
+	border: 1px solid #adadad;
+}
+
+.menu:hover {
+	text-decoration: none;
 }
