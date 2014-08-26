@@ -11,11 +11,12 @@
   </thead>
 
   <tbody>
-    <% @contact_all.each do |contact| %>
+    <% @cities.each do |city| %>
       <tr>
         
-      	<td><%= contact.city.name %></td>
-        <td><%= contact.contact_num %></td>
+      	<td><%= city.name %></td>
+        <td><%= city.contacts.count %></td>
+        <td><%= city.contacts.sum(:contact_num) %></td>
 
       </tr>
    <% end %>
