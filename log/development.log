@@ -18109,3 +18109,1379 @@ Processing by AllController#index as HTML
   [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 3]]
   Rendered all/index.html.erb within layouts/application (12.2ms)
 Completed 200 OK in 25ms (Views: 22.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-26 16:53:03 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AllController#index as HTML
+Completed 401 Unauthorized in 42ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-08-26 16:53:03 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/piotrek/.rvm/gems/ruby-2.1.0/gems/devise-3.2.4/app/views/devise/shared/_links.erb (1.8ms)
+  Rendered /home/piotrek/.rvm/gems/ruby-2.1.0/gems/devise-3.2.4/app/views/devise/sessions/new.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 136ms (Views: 119.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/all.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:03 +0200
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:03 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:03 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:03 +0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:03 +0200
+
+
+Started GET "/assets/show_all.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:03 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:03 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:03 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:03 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:03 +0200
+
+
+Started GET "/assets/all.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:03 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:03 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:03 +0200
+
+
+Started GET "/assets/show_all.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:03 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:03 +0200
+
+
+Started GET "/assets/greyzz.png" for 127.0.0.1 at 2014-08-26 16:53:04 +0200
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-26 16:53:33 +0200
+Processing by ContactsController#new as HTML
+  [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities"
+  Rendered contacts/_form.html.erb (20.5ms)
+  Rendered contacts/new.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 37ms (Views: 31.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:33 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:33 +0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:33 +0200
+
+
+Started GET "/assets/all.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:33 +0200
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:33 +0200
+
+
+Started GET "/assets/show_all.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:33 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:33 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:33 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:33 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:33 +0200
+
+
+Started GET "/assets/all.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:33 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:33 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:33 +0200
+
+
+Started GET "/assets/show_all.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:33 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:33 +0200
+
+
+Started GET "/assets/greyzz.png" for 127.0.0.1 at 2014-08-26 16:53:33 +0200
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-26 16:53:34 +0200
+Processing by ContactsController#new as HTML
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  Rendered contacts/_form.html.erb (6.5ms)
+  Rendered contacts/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/all.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:34 +0200
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:34 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:34 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:34 +0200
+
+
+Started GET "/assets/show_all.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:34 +0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:34 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:34 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:34 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:34 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:34 +0200
+
+
+Started GET "/assets/all.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:34 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:34 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:34 +0200
+
+
+Started GET "/assets/show_all.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:34 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:34 +0200
+
+
+Started GET "/assets/greyzz.png" for 127.0.0.1 at 2014-08-26 16:53:34 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-26 16:53:37 +0200
+Processing by AllController#index as HTML
+  [1m[35mCity Load (0.3ms)[0m  SELECT "cities".* FROM "cities" INNER JOIN "contacts" ON "contacts"."city_id" = "cities"."id" GROUP BY "contacts"."city_id"  ORDER BY COUNT("contacts"."city_id")
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 3]]
+  Rendered all/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 42ms (Views: 30.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-26 16:53:39 +0200
+Processing by ContactsController#new as HTML
+  [1m[36mCity Load (0.4ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  Rendered contacts/_form.html.erb (7.7ms)
+  Rendered contacts/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2014-08-26 16:53:41 +0200
+Processing by CitiesController#new as HTML
+  Rendered cities/_form.html.erb (3.7ms)
+  Rendered cities/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-26 16:53:41 +0200
+Processing by AllController#index as HTML
+  [1m[35mCity Load (0.7ms)[0m  SELECT "cities".* FROM "cities" INNER JOIN "contacts" ON "contacts"."city_id" = "cities"."id" GROUP BY "contacts"."city_id"  ORDER BY COUNT("contacts"."city_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 6]]
+  [1m[35m (0.3ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 5]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 4]]
+  [1m[35m (0.2ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 3]]
+  Rendered all/index.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 37ms (Views: 30.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-26 16:53:42 +0200
+Processing by AllController#index as HTML
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT "cities".* FROM "cities" INNER JOIN "contacts" ON "contacts"."city_id" = "cities"."id" GROUP BY "contacts"."city_id"  ORDER BY COUNT("contacts"."city_id")[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 3]]
+  Rendered all/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 23ms (Views: 19.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/all.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:43 +0200
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:43 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:43 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:43 +0200
+
+
+Started GET "/assets/show_all.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:43 +0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:43 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:43 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:43 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:43 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:43 +0200
+
+
+Started GET "/assets/all.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:43 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:43 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:43 +0200
+
+
+Started GET "/assets/show_all.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:43 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:43 +0200
+
+
+Started GET "/assets/greyzz.png" for 127.0.0.1 at 2014-08-26 16:53:43 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-26 16:53:43 +0200
+Processing by AllController#index as HTML
+  [1m[35mCity Load (0.7ms)[0m  SELECT "cities".* FROM "cities" INNER JOIN "contacts" ON "contacts"."city_id" = "cities"."id" GROUP BY "contacts"."city_id"  ORDER BY COUNT("contacts"."city_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 5]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 3]]
+  Rendered all/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 21ms (Views: 16.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/all.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:43 +0200
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:43 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:43 +0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:43 +0200
+
+
+Started GET "/assets/show_all.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:43 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:43 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/all.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/show_all.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/greyzz.png" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+Processing by AllController#index as HTML
+  [1m[36mCity Load (0.4ms)[0m  [1mSELECT "cities".* FROM "cities" INNER JOIN "contacts" ON "contacts"."city_id" = "cities"."id" GROUP BY "contacts"."city_id"  ORDER BY COUNT("contacts"."city_id")[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 3]]
+  Rendered all/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 28ms (Views: 24.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/all.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/show_all.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/all.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/show_all.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/greyzz.png" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+Processing by AllController#index as HTML
+  [1m[35mCity Load (0.7ms)[0m  SELECT "cities".* FROM "cities" INNER JOIN "contacts" ON "contacts"."city_id" = "cities"."id" GROUP BY "contacts"."city_id"  ORDER BY COUNT("contacts"."city_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 3]]
+  Rendered all/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 21ms (Views: 16.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/all.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/show_all.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/all.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/show_all.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/assets/greyzz.png" for 127.0.0.1 at 2014-08-26 16:53:44 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-26 16:53:45 +0200
+Processing by AllController#index as HTML
+  [1m[36mCity Load (0.4ms)[0m  [1mSELECT "cities".* FROM "cities" INNER JOIN "contacts" ON "contacts"."city_id" = "cities"."id" GROUP BY "contacts"."city_id"  ORDER BY COUNT("contacts"."city_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 3]]
+  Rendered all/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 23ms (Views: 20.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:45 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:45 +0200
+
+
+Started GET "/assets/all.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:45 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:45 +0200
+
+
+Started GET "/assets/show_all.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:45 +0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:45 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-26 16:53:45 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:45 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:45 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:45 +0200
+
+
+Started GET "/assets/all.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:45 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:45 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:45 +0200
+
+
+Started GET "/assets/show_all.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:45 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-26 16:53:45 +0200
+
+
+Started GET "/assets/greyzz.png" for 127.0.0.1 at 2014-08-26 16:53:45 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-26 16:54:49 +0200
+Processing by AllController#index as HTML
+Completed 401 Unauthorized in 3ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-08-26 16:54:49 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/piotrek/.rvm/gems/ruby-2.1.0/gems/devise-3.2.4/app/views/devise/shared/_links.erb (0.5ms)
+  Rendered /home/piotrek/.rvm/gems/ruby-2.1.0/gems/devise-3.2.4/app/views/devise/sessions/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 25ms (Views: 14.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/all.css?body=1" for 127.0.0.1 at 2014-08-26 16:54:49 +0200
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-26 16:54:49 +0200
+
+
+Started GET "/assets/show_all.css?body=1" for 127.0.0.1 at 2014-08-26 16:54:49 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-26 16:54:49 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-26 16:54:49 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-26 16:54:49 +0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-08-26 16:54:49 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-26 16:54:49 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-26 16:54:49 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-26 16:54:49 +0200
+
+
+Started GET "/assets/all.js?body=1" for 127.0.0.1 at 2014-08-26 16:54:49 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-26 16:54:49 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-26 16:54:49 +0200
+
+
+Started GET "/assets/show_all.js?body=1" for 127.0.0.1 at 2014-08-26 16:54:49 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-26 16:54:49 +0200
+
+
+Started GET "/assets/greyzz.png" for 127.0.0.1 at 2014-08-26 16:54:49 +0200
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2014-08-26 16:54:50 +0200
+Processing by CitiesController#new as HTML
+  Rendered cities/_form.html.erb (5.9ms)
+  Rendered cities/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 27ms (Views: 22.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/all.css?body=1" for 127.0.0.1 at 2014-08-26 16:54:50 +0200
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-26 16:54:50 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-26 16:54:50 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-26 16:54:50 +0200
+
+
+Started GET "/assets/show_all.css?body=1" for 127.0.0.1 at 2014-08-26 16:54:50 +0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-08-26 16:54:50 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-26 16:54:50 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-26 16:54:50 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-26 16:54:50 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-26 16:54:50 +0200
+
+
+Started GET "/assets/all.js?body=1" for 127.0.0.1 at 2014-08-26 16:54:50 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-26 16:54:50 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-26 16:54:50 +0200
+
+
+Started GET "/assets/show_all.js?body=1" for 127.0.0.1 at 2014-08-26 16:54:50 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-26 16:54:50 +0200
+
+
+Started GET "/assets/greyzz.png" for 127.0.0.1 at 2014-08-26 16:54:50 +0200
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-26 16:54:53 +0200
+Processing by ContactsController#new as HTML
+  [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities"
+  Rendered contacts/_form.html.erb (10.1ms)
+  Rendered contacts/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 24ms (Views: 20.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-26 16:54:54 +0200
+Processing by AllController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-08-26 16:54:54 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/piotrek/.rvm/gems/ruby-2.1.0/gems/devise-3.2.4/app/views/devise/shared/_links.erb (0.6ms)
+  Rendered /home/piotrek/.rvm/gems/ruby-2.1.0/gems/devise-3.2.4/app/views/devise/sessions/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-26 16:58:10 +0200
+Processing by AllController#index as HTML
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT "cities".* FROM "cities" INNER JOIN "contacts" ON "contacts"."city_id" = "cities"."id" GROUP BY "contacts"."city_id"  ORDER BY COUNT("contacts"."city_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 3]]
+  Rendered all/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 28ms (Views: 17.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/all.css?body=1" for 127.0.0.1 at 2014-08-26 16:58:10 +0200
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-26 16:58:10 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-26 16:58:10 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-26 16:58:10 +0200
+
+
+Started GET "/assets/show_all.css?body=1" for 127.0.0.1 at 2014-08-26 16:58:10 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-26 16:58:10 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-26 16:58:10 +0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-08-26 16:58:10 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-26 16:58:10 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-26 16:58:10 +0200
+
+
+Started GET "/assets/all.js?body=1" for 127.0.0.1 at 2014-08-26 16:58:10 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-26 16:58:10 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-26 16:58:10 +0200
+
+
+Started GET "/assets/show_all.js?body=1" for 127.0.0.1 at 2014-08-26 16:58:10 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-26 16:58:10 +0200
+
+
+Started GET "/assets/greyzz.png" for 127.0.0.1 at 2014-08-26 16:58:11 +0200
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-26 16:58:13 +0200
+Processing by ContactsController#new as HTML
+Completed 401 Unauthorized in 4ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-08-26 16:58:13 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/piotrek/.rvm/gems/ruby-2.1.0/gems/devise-3.2.4/app/views/devise/shared/_links.erb (0.5ms)
+  Rendered /home/piotrek/.rvm/gems/ruby-2.1.0/gems/devise-3.2.4/app/views/devise/sessions/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 28ms (Views: 16.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2014-08-26 16:58:14 +0200
+Processing by CitiesController#new as HTML
+Completed 401 Unauthorized in 2ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-08-26 16:58:14 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/piotrek/.rvm/gems/ruby-2.1.0/gems/devise-3.2.4/app/views/devise/shared/_links.erb (0.4ms)
+  Rendered /home/piotrek/.rvm/gems/ruby-2.1.0/gems/devise-3.2.4/app/views/devise/sessions/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-26 16:58:20 +0200
+Processing by ContactsController#new as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-08-26 16:58:20 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/piotrek/.rvm/gems/ruby-2.1.0/gems/devise-3.2.4/app/views/devise/shared/_links.erb (0.4ms)
+  Rendered /home/piotrek/.rvm/gems/ruby-2.1.0/gems/devise-3.2.4/app/views/devise/sessions/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2014-08-26 16:58:21 +0200
+Processing by CitiesController#new as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-08-26 16:58:21 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/piotrek/.rvm/gems/ruby-2.1.0/gems/devise-3.2.4/app/views/devise/shared/_links.erb (0.5ms)
+  Rendered /home/piotrek/.rvm/gems/ruby-2.1.0/gems/devise-3.2.4/app/views/devise/sessions/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-26 16:58:39 +0200
+Processing by AllController#index as HTML
+  [1m[35mCity Load (0.8ms)[0m  SELECT "cities".* FROM "cities" INNER JOIN "contacts" ON "contacts"."city_id" = "cities"."id" GROUP BY "contacts"."city_id"  ORDER BY COUNT("contacts"."city_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 5]]
+  [1m[35m (0.2ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 3]]
+  Rendered all/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 28ms (Views: 23.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-26 16:58:40 +0200
+Processing by ContactsController#new as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-08-26 16:58:40 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/piotrek/.rvm/gems/ruby-2.1.0/gems/devise-3.2.4/app/views/devise/shared/_links.erb (0.7ms)
+  Rendered /home/piotrek/.rvm/gems/ruby-2.1.0/gems/devise-3.2.4/app/views/devise/sessions/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-26 17:24:52 +0200
+Processing by AllController#index as HTML
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT "cities".* FROM "cities" INNER JOIN "contacts" ON "contacts"."city_id" = "cities"."id" GROUP BY "contacts"."city_id"  ORDER BY COUNT("contacts"."city_id")[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 3]]
+  Rendered all/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 25ms (Views: 21.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-26 17:24:53 +0200
+Processing by ContactsController#new as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-08-26 17:24:53 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/piotrek/.rvm/gems/ruby-2.1.0/gems/devise-3.2.4/app/views/devise/shared/_links.erb (0.5ms)
+  Rendered /home/piotrek/.rvm/gems/ruby-2.1.0/gems/devise-3.2.4/app/views/devise/sessions/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddProviderToUsers (20140826152922)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD "provider" varchar(255)[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "uid" varchar(255)
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140826152922"]]
+  [1m[35m (51.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-26 17:41:07 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AllController#index as HTML
+  [1m[35mCity Load (0.3ms)[0m  SELECT "cities".* FROM "cities" INNER JOIN "contacts" ON "contacts"."city_id" = "cities"."id" GROUP BY "contacts"."city_id"  ORDER BY COUNT("contacts"."city_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 5]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 3]]
+  Rendered all/index.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 1145ms (Views: 1104.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/all.css?body=1" for 127.0.0.1 at 2014-08-26 17:41:08 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-26 17:41:08 +0200
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-26 17:41:08 +0200
+
+
+Started GET "/assets/omniauth_callbacks.css?body=1" for 127.0.0.1 at 2014-08-26 17:41:08 +0200
+
+
+Started GET "/assets/omniauth_callbacks_controller.css?body=1" for 127.0.0.1 at 2014-08-26 17:41:08 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-26 17:41:08 +0200
+
+
+Started GET "/assets/show_all.css?body=1" for 127.0.0.1 at 2014-08-26 17:41:08 +0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-08-26 17:41:08 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-26 17:41:08 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:08 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:08 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:08 +0200
+
+
+Started GET "/assets/all.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:08 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:08 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:08 +0200
+
+
+Started GET "/assets/omniauth_callbacks_controller.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:08 +0200
+
+
+Started GET "/assets/omniauth_callbacks.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:08 +0200
+
+
+Started GET "/assets/show_all.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:08 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:08 +0200
+
+
+Started GET "/assets/greyzz.png" for 127.0.0.1 at 2014-08-26 17:41:09 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:12 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:12 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:19 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:21 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:21 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:22 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:22 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:23 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:23 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:24 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:25 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:25 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:25 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:25 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:25 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:25 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:26 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:26 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:27 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:27 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:27 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:27 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:28 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:28 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:28 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:28 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:29 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:29 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:30 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:30 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:30 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:30 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-26 17:41:36 +0200
+Processing by AllController#index as HTML
+  [1m[36mCity Load (0.4ms)[0m  [1mSELECT "cities".* FROM "cities" INNER JOIN "contacts" ON "contacts"."city_id" = "cities"."id" GROUP BY "contacts"."city_id"  ORDER BY COUNT("contacts"."city_id")[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 3]]
+  Rendered all/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 34ms (Views: 28.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/all.css?body=1" for 127.0.0.1 at 2014-08-26 17:41:36 +0200
+
+
+Started GET "/assets/omniauth_callbacks_controller.css?body=1" for 127.0.0.1 at 2014-08-26 17:41:36 +0200
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-26 17:41:36 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-26 17:41:36 +0200
+
+
+Started GET "/assets/omniauth_callbacks.css?body=1" for 127.0.0.1 at 2014-08-26 17:41:36 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-26 17:41:36 +0200
+
+
+Started GET "/assets/show_all.css?body=1" for 127.0.0.1 at 2014-08-26 17:41:36 +0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-08-26 17:41:36 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:36 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:36 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-26 17:41:36 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:36 +0200
+
+
+Started GET "/assets/all.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:36 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:36 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:36 +0200
+
+
+Started GET "/assets/omniauth_callbacks.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:36 +0200
+
+
+Started GET "/assets/omniauth_callbacks_controller.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:36 +0200
+
+
+Started GET "/assets/show_all.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:36 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:36 +0200
+
+
+Started GET "/assets/greyzz.png" for 127.0.0.1 at 2014-08-26 17:41:36 +0200
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-08-26 17:41:38 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /home/piotrek/.rvm/gems/ruby-2.1.0/gems/devise-3.2.4/app/views/devise/shared/_links.erb (1.8ms)
+  Rendered /home/piotrek/.rvm/gems/ruby-2.1.0/gems/devise-3.2.4/app/views/devise/registrations/new.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 52ms (Views: 48.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-08-26 17:41:40 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/piotrek/.rvm/gems/ruby-2.1.0/gems/devise-3.2.4/app/views/devise/shared/_links.erb (1.0ms)
+  Rendered /home/piotrek/.rvm/gems/ruby-2.1.0/gems/devise-3.2.4/app/views/devise/sessions/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:42 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:42 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:43 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:44 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:44 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:45 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:45 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:41:45 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-26 17:41:52 +0200
+Processing by AllController#index as HTML
+  [1m[35mCity Load (1.1ms)[0m  SELECT "cities".* FROM "cities" INNER JOIN "contacts" ON "contacts"."city_id" = "cities"."id" GROUP BY "contacts"."city_id"  ORDER BY COUNT("contacts"."city_id")
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 2]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 6]]
+  [1m[35m (0.2ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 3]]
+  Rendered all/index.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 41ms (Views: 35.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/all.css?body=1" for 127.0.0.1 at 2014-08-26 17:41:52 +0200
+
+
+Started GET "/assets/omniauth_callbacks.css?body=1" for 127.0.0.1 at 2014-08-26 17:41:52 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-26 17:41:52 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-26 17:41:52 +0200
+
+
+Started GET "/assets/omniauth_callbacks_controller.css?body=1" for 127.0.0.1 at 2014-08-26 17:41:52 +0200
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-26 17:41:52 +0200
+
+
+Started GET "/assets/show_all.css?body=1" for 127.0.0.1 at 2014-08-26 17:41:52 +0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-08-26 17:41:52 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-26 17:41:52 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:52 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:52 +0200
+
+
+Started GET "/assets/omniauth_callbacks.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:52 +0200
+
+
+Started GET "/assets/all.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:52 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:52 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:52 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:52 +0200
+
+
+Started GET "/assets/omniauth_callbacks_controller.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:52 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:52 +0200
+
+
+Started GET "/assets/show_all.js?body=1" for 127.0.0.1 at 2014-08-26 17:41:52 +0200
+
+
+Started GET "/assets/greyzz.png" for 127.0.0.1 at 2014-08-26 17:41:53 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:42:38 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:42:38 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:42:40 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:42:41 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:42:41 +0200
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-08-26 17:42:41 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-26 17:47:12 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AllController#index as HTML
+  [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities" INNER JOIN "contacts" ON "contacts"."city_id" = "cities"."id" GROUP BY "contacts"."city_id"  ORDER BY COUNT("contacts"."city_id")
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."contact_num") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 3]]
+  Rendered all/index.html.erb within layouts/application (22.7ms)
+Completed 500 Internal Server Error in 167ms
+
+ActionView::Template::Error (undefined method `user_oauth_authorize_url' for #<#<Class:0x00000005025a08>:0x00000005024e78>):
+    12: <p class="notice"><%= notice %></p>
+    13: <p class="alert"><%= alert %></p>
+    14: 
+    15: <%= link_to "Sign in as User with Facebook", user_oauth_authorize_url(:facebook) %>
+    16: 
+    17: <%= link_to root_path, :class => "btn-default btn-lg menu" do %>
+    18: <i class="glyphicon glyphicon-home"></i>&nbsp&nbsp&nbspHome
+  app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb___1765176455068234618_41812320'
+
+
+  Rendered /home/piotrek/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/piotrek/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/piotrek/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.0ms)
