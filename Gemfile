@@ -6,7 +6,7 @@ gem 'rails', '4.1.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
@@ -30,7 +30,9 @@ gem 'spring',        group: :development
 
 gem 'devise'
 
-gem 'kaminari'
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'sass-rails', '>= 3.2'
+gem 'autoprefixer-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
