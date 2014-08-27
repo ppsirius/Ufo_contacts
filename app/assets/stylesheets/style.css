@@ -22,3 +22,17 @@ body {
 .menu:hover {
 	text-decoration: none;
 }
+
+.login {
+	margin-top: 15px;
+	font-size: 18px;
+	text-align: right;
+}
+
+.alert {
+	margin-top: 18px;
+}
+
+.notice {
+	margin-top: 18px;
+}

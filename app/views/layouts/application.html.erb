@@ -9,6 +9,16 @@
 </head>
 <body>
 <div class="container">
+<div class="login pull-right">
+<% if user_signed_in? %>
+  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>     
+  <h5>Logged in as <em><%= current_user.email %></em></h5>   
+<% else %>
+  <%= link_to('Login', new_user_session_path)  %>  
+<% end %>
+</div>
+
+
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 

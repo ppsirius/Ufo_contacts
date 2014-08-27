@@ -29,6 +29,8 @@ gem 'spring',        group: :development
 
 
 gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook' 
 
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'sass-rails', '>= 3.2'
